@@ -1,7 +1,8 @@
 '''
-[p]cog [reload|restart|reset] will reload ad cog
-[p]cog [unload|stop] will unload a cog
-[p]cog [load|start] will start a cog
+*COGS MUST BE IN FOLDER TITLED "cogs"!!!
+[p]cog [reload|restart|reset] will reload an extension
+[p]cog [unload|stop] will unload an extension
+[p]cog [load|start] will start an extension
 '''
 @bot.command()
 async def cog(ctx,type,arg):
