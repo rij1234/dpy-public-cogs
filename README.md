@@ -5,3 +5,5 @@
 #### Purge command with many built in filters
 ## on_command_error.py
 #### Command Error Handeler
+## snipe.py
+#### Tells you the last deleted message in the channel
