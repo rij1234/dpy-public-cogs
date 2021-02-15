@@ -7,3 +7,5 @@
 #### Command Error Handeler
 ## snipe.py
 #### Tells you the last deleted message in the channel
+## eval.py
+#### Really good eval command with syntax highlighting codeblocks compatibility
