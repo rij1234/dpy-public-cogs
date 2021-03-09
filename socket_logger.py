@@ -6,7 +6,8 @@ from prettytable import PrettyTable
 class Log_Raw(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.bot.event_cache = {"GUILD_CREATE":0,
+        self.bot.event_cache = {
+                    "GUILD_CREATE":0,
                     "GUILD_UPDATE":0,
                     "GUILD_DELETE":0,
                     "GUILD_ROLE_CREATE":0,
