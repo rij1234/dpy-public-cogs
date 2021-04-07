@@ -3,10 +3,6 @@ This is modified from https://gist.github.com/nitros12/2c3c265813121492655bc95aa
 Includes evals for syntax highlighted codeblocks
 '''
 
-#Put your user id in this list
-bot.admin_id = []
-
-
 def insert_returns(body):
     # insert return stmt if the last expression is a expression statement
     if isinstance(body[-1], ast.Expr):
@@ -24,6 +20,7 @@ def insert_returns(body):
 
 
 @bot.command(aliases=["eval","e"])
+@commands.is_owner()
 async def evaluate(ctx,*,cmd):
   if ctx.author.id in bot.admin_id:
     fn_name = "_eval_expr"
