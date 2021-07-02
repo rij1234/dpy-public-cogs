@@ -17,7 +17,7 @@ class Snipe(commands.Cog):
     msg = self.recent_msgs[str(ctx.channel.id)]
 
     embed = discord.Embed(title=msg.content, timestamp=msg.created_at)
-    embed.set_author(name=f"{msg.author.name}#{msg.author.discriminator}", icon_url=msg.author.avatar_url)
+    embed.set_author(name=f"{msg.author.name}#{msg.author.discriminator}", icon_url=msg.author.avatar_url) # or msg.author.avatar.url if in 2.0+
 
     await ctx.send(embed=embed)
 
